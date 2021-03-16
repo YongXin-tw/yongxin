@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page3.html</title>
+    <title>page11.html</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
@@ -30,11 +30,7 @@
           服務項目
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="page3.html">顧問服務</a>
-          <a class="dropdown-item" href="#">許可業務</a>
-          <a class="dropdown-item" href="#">申報業務</a>
-          <a class="dropdown-item" href="#">工程業務</a>
-          <a class="dropdown-item" href="#">檢測服務</a>
+          <a class="dropdown-item" href="page3.html">顧問服務</a><a class="dropdown-item" href="page4.html">許可業務</a><a class="dropdown-item" href="page5.html">申報業務</a><a class="dropdown-item" href="page6.html">工程業務</a><a class="dropdown-item" href="page7.html">檢測服務</a>
         </div>
       </li>
                  <li class="nav-item dropdown">
@@ -42,13 +38,12 @@
          各類產品
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">環保用藥</a>
+          <a class="dropdown-item" href="page8.html">環保用藥</a>
             <a class="dropdown-item" href="#">廢棄物相關用藥</a>
           <a class="dropdown-item" href="#">環保相關設備</a>
         </div>
-      </li>
-<li class="nav-item dropdown "><a class="nav-link font-weight-bold" href="#" id="navbarDropdown" data-toggle="dropdown"> 聯繫我們</a>
-    <div class="dropdown-menu"><a class="dropdown-item" href="#">線上表單</a>
+      </li><li class="nav-item dropdown "><a class="nav-link font-weight-bold" href="#" id="navbarDropdown" data-toggle="dropdown"> 聯繫我們</a>
+    <div class="dropdown-menu"><a class="dropdown-item" href="page11.html">線上表單</a>
 </li>
             </ul>
         </div>
@@ -59,23 +54,39 @@
   height:300px;
   background-size:cover;
     background-position:center center;
-" ></div><div class="container mt-3">
+" ></div><div class="container mt-3 ">
 <div class="row">
     <div class="col-md-5">
-        <h2 class="font-weight-bold">顧問服務</h2>
+        <h2 class="font-weight-bold">聯繫我們</h2>
       <div class="bg-primary pt-1 my-2"></div>
     </div></div>
-    <div class="row">
-        <div class="col-md-5"><ul><li>環境相關法令諮詢</li>
-            <li>技術顧問</li>
-             <li>污染防治設備採購及資料索引等之諮詢服務</li>
-            </ul></div><div class="col-md-7">
-            <img src="assets/img/page3-1.png" class="img-fluid">
+    <form   enctype="text/plain" accept-charset="utf-8"><div class="form-row mt-3">
+        <div class="form-group col-md-4">
+       <!-- 寄件者姓名    -->
+        <input id="nameText" class="form-control" type="text" name="Name"  value size="60" placeholder="姓名(name)" required>  <!-- required 必填欄位 ，placeholder 預設內容--> 
+        </div>
+        <!-- 寄件者email -->
+        <div class="form-group col-md-4">
+        <input id="emailText" class="form-control" type="email" name="Email"  value size="60" placeholder="Email" required>
+        </div>
+        <!-- 寄件者電話 -->
+        <div class="form-group col-md-4">
+        <input id="telText" class="form-control"type="tel" name="Phone"  value size="60" aria-invalid="false" placeholder="電話(phone)" required>
             </div>
-    
-    </div>
-    </div>
-    <div>
+        </div>
+        <!-- 郵件主旨 -->
+        <div class="form-group">
+        <input  id="subText" class="form-control" type="text" name="Subject"  value size="60" aria-invalid="false" placeholder="主旨(subject)" required>
+        </div>
+        <!-- 郵件內容 -->
+        <textarea id="bodyText" class="form-control "name="your-message" cols="40" rows="10"  aria-required="true" aria-invalid="false" placeholder="你的訊息(Your Message)" required></textarea>
+        
+        <!-- 傳送按鈕 -->
+        <div  class="d-flex justify-content-center my-4">
+            <input type="button" value="送出訊息" onclick="submitHandler();" class="btn btn-primary ">
+            <a id="mailTo" ></a>
+        </div>
+    </form><div>
     <div class="footer-light ">
         <footer>
             <div class="container">
@@ -105,6 +116,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
