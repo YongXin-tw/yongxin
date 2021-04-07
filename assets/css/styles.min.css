@@ -22,3 +22,9 @@ background: -o-linear-gradient(171deg, rgba(44, 125, 208, 1)17%, rgba(143, 220, 
     background-repeat: no-repeat;
     background-size:cover;
   }
+  .indeximg{
+    max-height: 300px;
+     width: 100%;
+     object-fit: cover;
+     object-fit: fill;
+  }

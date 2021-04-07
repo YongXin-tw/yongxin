@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>page8.html</title>
+  <title>page9.html</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
   <link rel="stylesheet" href="assets/css/styles.min.css">
   <link rel="stylesheet" href="assets/fontawesome-free-5.15.2/css/all.css">
-
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -61,102 +61,151 @@
   </nav>
   <div class="RGBA py-1"></div>
   <div class="rwdimg1" style="background-image:url(assets/img/2.jpg)"></div>
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-md-5">
-               <h2 class="font-weight-bold">環保用藥</h2>
-        <div class="bg-primary pt-1 my-2"></div>
-           
-      </div>
+  <div class="container-fluid p-3" id="wrap">
+    <div class="row tabs headMenu text-center ">
+      <div class="col active"><a href="#tab1"class=""><i class="fas fa-wind fa-5x d-block"></i>空汙用藥</a></div>
+      <div class="col"><a href="#tab2"class=""><i class="fas fa-tint fa-5x d-block"></i>水汙用藥</a></div>
+      <div class="col"><a href="#tab3"class=""><i class="fas fa-recycle fa-5x d-block"></i>廢棄物用藥</a></div>
     </div>
-    <div class="row my-3 ">
-      <div class="col-md-6 text-center"><img src="assets/img/活性碳.png" class="rounded-circle"></div>
-      <div class="col-md-6 ">
-        <h2 class="mb-3">活性碳</h2>
-        <p>工業.生活廢水脫色.脫臭及降COD.配合生物處理系統使用效果更佳.產品有粉狀.顆粒狀及柱狀三種規格</p>
+    <div class="tab_container">
+      <div id="tab1" class="tab_content" style="display: block; ">
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-md-5">
+                     <h2 class="font-weight-bold">空汙用藥</h2>
+              <div class="bg-primary pt-1 my-2"></div>
+                 
+            </div>
+          </div>
+          <div class="row my-3 ">
+            <div class="col-md-6 text-center"><img src="assets/img/活性碳.png" class="rounded-circle"></div>
+            <div class="col-md-6 ">
+              <h2 class="mb-3">活性碳</h2>
+              <p>工業.生活廢水脫色.脫臭及降COD.配合生物處理系統使用效果更佳.產品有粉狀.顆粒狀及柱狀三種規格</p>
+            </div>
+          </div>
+          <div class="row my-3 flex-md-row-reverse">
+            <div class="col-md-6 text-center"><img src="assets/img/重補硫化納.png " class="rounded-circle"></div>
+            <div class="col-md-6">
+              <h2 class="mb-3">重捕硫化納</h2>
+              <p>近年來由於環保意識抬高,對於危害較大的重金屬,扔然無法得到完善的去除方法.本公司開發重捕硫化鈉,是一種能提高去重金屬離子之化學藥劑.</p>
+              <p>傳統上對於廢水中重金屬離子之處理方法,不外乎是以氫氧化物調整PH值,或是投入硫化鈉在凝集.沉澱.分離,然而對於螯合物重金屬之處理,並不能令人滿意,但本公司之重捕硫化鈉能提高對於各項重金屬之去除能力</p>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-md-6 text-center"><img src="assets/img/重金屬補集劑.png" class="rounded-circle"></div>
+            <div class="col-md-6">
+              <h2 class="mb-3">重金屬補集劑</h2>
+              <p>用於除高.低濃度重金屬廢水</p>
+              <p>使用範圍廣泛,PH6~12皆可,是一種有機型聚合物</p>
+              <p>能同時操作於各種重金屬之廢水,產生顆粒之固形物</p>
+              <p>可直接處理含有螯合劑與重金屬結合之產品.例如:化學鎳.銅等產品</p>
+            </div>
+          </div>
+          <div class="row my-3 flex-md-row-reverse">
+            <div class="col-md-6 text-center"><img src="assets/img/除氯劑.png" class="rounded-circle"></div>
+            <div class="col-md-6">
+              <h2 class="mb-3">除氯劑</h2>
+              <p>本公司研發之除氯劑A劑與B劑,可與其他水質處里劑併用或單獨使用,能有效去除水中氯離子含量.本藥劑是以化學處理方式將氯離子從水中剝離.沉澱.目前廣泛應用於含有氯離子廢水體系之產業</p>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-md-6 text-center"><img src="assets/img/高分子凝集劑.png" class="rounded-circle"></div>
+            <div class="col-md-6">
+              <h2 class="mb-3">高分子凝集劑</h2>
+              <p>高分子凝集劑可使用於化學混凝.浮除.沉降.淤泥脫水等程序中,對水有高溶解性,並形成黏稠液體</p>
+            </div>
+          </div>
+          <div class="row my-3 flex-md-row-reverse">
+            <div class="col-md-6 text-center"><img src="assets/img/絕版清潔劑.png" class="rounded-circle"></div>
+            <div class="col-md-6 ">
+              <h2 class="mb-3">絕版清潔劑</h2>
+              <p>本公司研發多款網版清潔劑.其中包含設備型,手擦型及環保型網版清潔劑.清洗能力及佳且快速.適用於油墨清洗及各類膠財清洗</p>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-md-6 text-center"><img src="assets/img/營養劑.png" class="rounded-circle"></div>
+            <div class="col-md-6">
+              <h2 class="mb-3">營養劑</h2>
+              <p>營養劑應用於廢水之生物處理系統上,提供生物所需之營養以利其生長.本公司之營養劑除了添加生物所需N(氮).P(磷),另外添加其他微量有機物及金屬元素增加生物活性</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row my-3 flex-md-row-reverse">
-      <div class="col-md-6 text-center"><img src="assets/img/重補硫化納.png " class="rounded-circle"></div>
-      <div class="col-md-6">
-        <h2 class="mb-3">重捕硫化納</h2>
-        <p>近年來由於環保意識抬高,對於危害較大的重金屬,扔然無法得到完善的去除方法.本公司開發重捕硫化鈉,是一種能提高去重金屬離子之化學藥劑.</p>
-        <p>傳統上對於廢水中重金屬離子之處理方法,不外乎是以氫氧化物調整PH值,或是投入硫化鈉在凝集.沉澱.分離,然而對於螯合物重金屬之處理,並不能令人滿意,但本公司之重捕硫化鈉能提高對於各項重金屬之去除能力</p>
+      <div id="tab2" class="tab_content" style="display: block; ">
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-md-5">
+                     <h2 class="font-weight-bold">水汙用藥</h2>
+              <div class="bg-primary pt-1 my-2"></div>
+                 
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row my-3">
-      <div class="col-md-6 text-center"><img src="assets/img/重金屬補集劑.png" class="rounded-circle"></div>
-      <div class="col-md-6">
-        <h2 class="mb-3">重金屬補集劑</h2>
-        <p>用於除高.低濃度重金屬廢水</p>
-        <p>使用範圍廣泛,PH6~12皆可,是一種有機型聚合物</p>
-        <p>能同時操作於各種重金屬之廢水,產生顆粒之固形物</p>
-        <p>可直接處理含有螯合劑與重金屬結合之產品.例如:化學鎳.銅等產品</p>
-      </div>
-    </div>
-    <div class="row my-3 flex-md-row-reverse">
-      <div class="col-md-6 text-center"><img src="assets/img/除氯劑.png" class="rounded-circle"></div>
-      <div class="col-md-6">
-        <h2 class="mb-3">除氯劑</h2>
-        <p>本公司研發之除氯劑A劑與B劑,可與其他水質處里劑併用或單獨使用,能有效去除水中氯離子含量.本藥劑是以化學處理方式將氯離子從水中剝離.沉澱.目前廣泛應用於含有氯離子廢水體系之產業</p>
-      </div>
-    </div>
-    <div class="row my-3">
-      <div class="col-md-6 text-center"><img src="assets/img/高分子凝集劑.png" class="rounded-circle"></div>
-      <div class="col-md-6">
-        <h2 class="mb-3">高分子凝集劑</h2>
-        <p>高分子凝集劑可使用於化學混凝.浮除.沉降.淤泥脫水等程序中,對水有高溶解性,並形成黏稠液體</p>
-      </div>
-    </div>
-    <div class="row my-3 flex-md-row-reverse">
-      <div class="col-md-6 text-center"><img src="assets/img/絕版清潔劑.png" class="rounded-circle"></div>
-      <div class="col-md-6 ">
-        <h2 class="mb-3">絕版清潔劑</h2>
-        <p>本公司研發多款網版清潔劑.其中包含設備型,手擦型及環保型網版清潔劑.清洗能力及佳且快速.適用於油墨清洗及各類膠財清洗</p>
-      </div>
-    </div>
-    <div class="row my-3">
-      <div class="col-md-6 text-center"><img src="assets/img/營養劑.png" class="rounded-circle"></div>
-      <div class="col-md-6">
-        <h2 class="mb-3">營養劑</h2>
-        <p>營養劑應用於廢水之生物處理系統上,提供生物所需之營養以利其生長.本公司之營養劑除了添加生物所需N(氮).P(磷),另外添加其他微量有機物及金屬元素增加生物活性</p>
+      <div id="tab3" class="tab_content" style="display: block; ">
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-md-5">
+                     <h2 class="font-weight-bold">廢棄物用藥</h2>
+              <div class="bg-primary pt-1 my-2"></div>
+                 
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+    
+  
   <div class="footer-light scrolltop animated2 mt-3 border-top RGBA text-light pb-3">
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mt-5">
-                    <h3>聯繫我們</h3>
-                    <p class="mb-1"><i class="fas fa-envelope-square"></i> Email</p>
-                    <p>yongxin@hibox.biz</p>
-                    <p class="mb-1"><i class="fas fa-laptop-house"></i> 地址</p>
-                    <p>433台中市沙鹿區南陽路288號 <a href="page11.html"><i class="fas fa-map-marker-alt"></i></a></p>    
-                </div>
-                <div class="col-md-3 mt-auto">
-                    <p class="mb-1"><i class="fas fa-phone"></i> 諮詢專線</p>
-                    <p>04-26310236</p>
-                    <P class="mb-1"><i class="fas fa-fax"></i> 傳真專線</P>
-                    <P>04-22569806</P>  
-                </div>
-                <div class="col-md-5 mt-auto">
-                        <div class="d-flex align-items-end" ><img src="assets/img/mark.png" alt="" style="width: 125px;">
-                            <div class="pb-4 text-left">
-                                <h4>永鑫環保有限公司</h4> 
-                                <p>YongXin Environmental Co, Ltd</p>
-                            </div>
-                        </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mt-5">
+            <h3>聯繫我們</h3>
+            <p class="mb-1"><i class="fas fa-envelope-square"></i> Email</p>
+            <p>yongxin@hibox.biz</p>
+            <p class="mb-1"><i class="fas fa-laptop-house"></i> 地址</p>
+            <p>433台中市沙鹿區南陽路288號 <a href="page11.html"><i class="fas fa-map-marker-alt"></i></a></p>    
+          </div>
+          <div class="col-md-3 mt-auto">
+            <p class="mb-1"><i class="fas fa-phone"></i> 諮詢專線</p>
+            <p>04-26310236</p>
+            <P class="mb-1"><i class="fas fa-fax"></i> 傳真專線</P>
+            <P>04-22569806</P>  
+          </div>
+          <div class="col-md-5 mt-auto">
+            <div class="d-flex align-items-end"><img src="assets/img/mark.png" alt="" style="width: 125px;">
+              <div class="pb-4 text-left">
+                <h4>永鑫環保有限公司</h4>
+                <p>YongXin Environmental Co, Ltd</p>
+              </div>
             </div>
-             <p class="copyright  text-center text-white ">永鑫 © 2021</p>
+          </div>
         </div>
+         <p class="copyright  text-center text-white ">永鑫 © 2021</p>
+      </div>
     </footer>
-</div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.min.js"></script>
+  <script>
+    $(".tab_content").hide();
+    $(".row.tabs div:first").addClass("active").show();
+    $(".tab_content:first").show();
+    $(".row.tabs div").click(function () {
+      $(".row.tabs div").removeClass("active");
+      $(this).addClass("active");
+      $(".tab_content").hide();
+      var activeTab = $(this).find("a").attr("href");
+      $(activeTab).fadeIn();
+      return false;
+    });
+  </script>
 </body>
 
 </html>
